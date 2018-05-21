@@ -5,28 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    tools:context=".NuovaSegnalazione">
+    tools:context=".NuovaSegnalazione"
+    android:focusable="true">
 
-    <Button
-        android:id="@+id/PhotoButton"
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="162dp"
-        android:layout_height="151dp"
-        android:text="Fotocamera"
+        android:layout_height="140dp"
+        android:contentDescription="@string/aggiungi_foto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
-
-    <ImageView
-        android:id="@+id/PhotoImage"
-        android:layout_width="191dp"
-        android:layout_height="159dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PhotoButton"
+        app:layout_constraintVertical_bias="0.068"
         app:srcCompat="@drawable/ic_menu_camera" />
 </android.support.constraint.ConstraintLayout>
