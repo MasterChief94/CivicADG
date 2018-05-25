@@ -14,4 +14,8 @@
     <string name="provapopup">ProvaPopup</string>
     <string name="aggiungi_foto">Aggiungi Foto</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button">Button</string>
+    <string name="scattafoto">Scatta Foto</string>
+
 </resources>
