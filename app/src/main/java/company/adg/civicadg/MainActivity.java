@@ -98,6 +98,9 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_track) {
 
+            Intent openTracking = new Intent(MainActivity.this,Tracking.class);
+            startActivity(openTracking);
+
         } else if (id == R.id.nav_help) {
 
         } else if (id == R.id.nav_exit) {
