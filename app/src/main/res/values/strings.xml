@@ -2,8 +2,8 @@
     <string name="app_name">CivicADG</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Utente Anonimo</string>
+    <string name="nav_header_subtitle"></string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="PhotoButton">Fotocamera</string>
@@ -13,6 +13,8 @@
     <string name="fotocamera">Fotocamera</string>
     <string name="provapopup">ProvaPopup</string>
     <string name="aggiungi_foto">Aggiungi Foto</string>
+    <string name="News">News</string>
+    <string name="Nuova">Nuova Segnalazione</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button">Button</string>

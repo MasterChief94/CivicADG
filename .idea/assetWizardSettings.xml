@@ -16,11 +16,29 @@
                             <entry key="launcher">
                               <value>
                                 <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="$USER_HOME$/Downloads/buco.png" />
-                                      <entry key="foregroundLayerName" value="ic_bucoimage" />
-                                      <entry key="outputName" value="ic_buco" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="eafffd" />
+                                      <entry key="backgroundLayerName" value="ic_buco_background" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/Rotture/image1.jpg" />
+                                      <entry key="foregroundLayerName" value="img_tombino" />
+                                      <entry key="outputName" value="tombino" />
                                     </map>
                                   </option>
                                 </PersistentState>

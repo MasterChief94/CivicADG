@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.ViewPager;
+import android.view.DragEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,14 +18,27 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private ViewFlipper viewFlipper;
+    private float lastX;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ViewPager viewPager;
+
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        ViewPageAdapter viewPageAdapter = new ViewPageAdapter(this);
+
+        viewPager.setAdapter(viewPageAdapter);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -40,6 +56,7 @@ public class MainActivity extends AppCompatActivity
         NewSegnalazione.setOnClickListener(NewSegnalazioneListener);
 
     }
+
 
     public View.OnClickListener NewSegnalazioneListener = new View.OnClickListener() {
         @Override
