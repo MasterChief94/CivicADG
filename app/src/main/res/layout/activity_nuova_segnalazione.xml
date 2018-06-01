@@ -3,21 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clickable="true"
-    android:focusable="true"
-    tools:context=".NuovaSegnalazione">
-
+    android:layout_height="match_parent">
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="170dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:contentDescription="@string/aggiungi_foto"
         app:layout_constraintBottom_toTopOf="@+id/addPhotoButton"
         app:layout_constraintEnd_toStartOf="@+id/LocButton"
+        app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_menu_camera" />
@@ -26,11 +21,9 @@
         android:id="@+id/addPhotoButton"
         android:layout_width="170dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/LocButton"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:srcCompat="@drawable/ic_add_black_24dp" />
@@ -39,21 +32,20 @@
         android:id="@+id/LocButton"
         android:layout_width="162dp"
         android:layout_height="140dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095"
+        app:layout_constraintVertical_bias="0.097"
         app:srcCompat="@mipmap/ic_loc" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="162dp"
+        android:layout_height="21dp"
         android:text="Segna qui la gravità"
         android:textColor="#c10015ff"
         android:textSize="18sp"
@@ -69,11 +61,11 @@
         android:id="@+id/linearLayout"
         android:layout_width="326dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginBottom="356dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioGroup
@@ -114,6 +106,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="431dp" />
+
 
 </android.support.constraint.ConstraintLayout>

@@ -20,12 +20,19 @@ import android.preference.DialogPreference;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -64,6 +71,7 @@ public class NuovaSegnalazione extends AppCompatActivity {
         setContentView(R.layout.activity_nuova_segnalazione);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         RadioGroup selezione = (RadioGroup) findViewById(R.id.RadioGravità);
         selezione.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -180,6 +188,7 @@ public class NuovaSegnalazione extends AppCompatActivity {
                         ,Toast.LENGTH_SHORT).show();        }
             }
         }
+
 
 
     public View.OnClickListener SelezioneListener = new View.OnClickListener() {

@@ -23,9 +23,6 @@ import android.widget.ViewFlipper;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private ViewFlipper viewFlipper;
-    private float lastX;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +35,6 @@ public class MainActivity extends AppCompatActivity
         ViewPageAdapter viewPageAdapter = new ViewPageAdapter(this);
 
         viewPager.setAdapter(viewPageAdapter);
-
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -114,9 +110,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_add) {
 
         } else if (id == R.id.nav_track) {
-
-            Intent openTracking = new Intent(MainActivity.this,Tracking.class);
-            startActivity(openTracking);
 
         } else if (id == R.id.nav_help) {
 
